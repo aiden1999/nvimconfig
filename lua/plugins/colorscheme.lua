@@ -1,5 +1,8 @@
 return {
-    { "shaunsingh/nord.nvim" },
+    {
+        "shaunsingh/nord.nvim",
+        nord_disable_background = true,
+    },
 
     {
         "LazyVim/LazyVim",

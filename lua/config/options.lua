@@ -4,3 +4,4 @@
 local opt = vim.opt
 
 opt.shiftwidth = 4 -- Size of an indent
+vim.g.nord_disable_background = true
