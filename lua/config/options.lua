@@ -4,4 +4,6 @@
 local opt = vim.opt
 
 opt.shiftwidth = 4 -- Size of an indent
-vim.g.nord_disable_background = true
+opt.tabstop = 4 -- Number of spaces tabs count for
+opt.autoindent = true
+opt.wrap = true

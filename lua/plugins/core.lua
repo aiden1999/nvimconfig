@@ -1,3 +1,4 @@
+-- this is only here because I changed an icon or two but idk which
 return {
     {
         "LazyVim/LazyVim",
