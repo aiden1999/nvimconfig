@@ -1,10 +1,17 @@
 return {
     "nvim-lualine/lualine.nvim",
     opts = function()
+        local lualine_require = require("lualine_require")
+        lualine_require.require = require
         local icons = LazyVim.config.icons
+        vim.o.laststatus = vim.g.lualine_laststatus
         local opts = {
             options = {
                 theme = "nord",
+                globalstatus = vim.o.laststatus == 3,
+                disabled_filetypes = {
+                    statusline = { "dashboard", "alpha", "ministarter", "snacks_dashboard", "snacks_terminal" },
+                },
             },
             sections = {
                 lualine_a = {
